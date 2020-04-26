@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Vue</title>
+	<script src="./js/bundle.js"></script>
+</head>
+<body>
+	<div id="app">
+		<label for="moonDay-select">Wybierz swój dzień księżycowy:</label>
+		<select v-model="selectedMoonDay" id="moonDay-select">
+			<option disabled value="">Wybierz dzień księżycowy</option>
+			<option v-for="moonDay in moonDays">{{moonDay}}</option>
+		</select>
+
+		<form>
+  	<label for="birthday-select">Wybierz datę swoich urodzin:</label>
+  		<input type="date" v-model="dateOfBirth" id="birthday-select">
+  		<!--<input type="submit">-->
+		</form>
+	</div>
+</body>
+</html>
