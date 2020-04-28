@@ -9,8 +9,16 @@
 </head>
 <body>
 	<div id="app">
+
+		<!-- <h1>{{ greeting }}</h1>
+		<button v-on:click="updateGreeting('Marcin')">Change Greeting</button> -->
+
+
+
 		<label for="moonDay-select">Wybierz swój dzień księżycowy:</label>
-		<select v-model="selectedMoonDay" id="moonDay-select">
+		<select v-model="selectedMoonDay" @change="assignMoonWord" id="moonDay-select">
+			<!-- <input v-model="userName" @change="someHandler"> -->
+
 			<option disabled value="">Wybierz dzień księżycowy</option>
 			<option v-for="moonDay in moonDays">{{moonDay}}</option>
 		</select>
@@ -20,6 +28,9 @@
   		<input type="date" v-model="dateOfBirth" id="birthday-select">
   		<!--<input type="submit">-->
 		</form>
+
+		<button v-on:click="assignMoonWord">Show my Moon Year</button>
+		<h1>Twój Świat Księżycowy to: {{ moonWorld }}</h1>
 	</div>
 </body>
 </html>
