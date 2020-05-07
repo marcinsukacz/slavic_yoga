@@ -9,13 +9,16 @@ document.addEventListener('DOMContentLoaded', () => {
     moonWorld: "",
     sunWorld: "",
     dateOfBirth: null,
-    greeting: ""
+    greeting: "",
+    month: null
   },
   methods: { // NEW
     updateGreeting: function(name) {
       this.greeting = "Hi! " + name;
     },
 
+    //this function will take the value of user selection - moon day and depending on it assign a
+    //
     assignMoonWorld: function() {
 
       let day = this.selectedMoonDay;
@@ -31,10 +34,19 @@ document.addEventListener('DOMContentLoaded', () => {
         this.moonWorld = "D";
       }
     },
-    
-    assignSunWorld: function() {
+    showMonth: function() {
 
-      }
+
+      var dateOfBirthInFormat = new Date(this.dateOfBirth);
+      // var dtm = dt.getMonth();
+      // var dty = dt.getYear();
+
+      this.month = dateOfBirthInFormat.getMonth();
+      console.log(this.month);
+    },
+    // assignSunWorld: function() {
+    //
+    //   }
 
 
       // switch(dayToCheck) {
@@ -82,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
       //     break;
       //
       // }
-    }
+
   }
 });
 });

@@ -16,7 +16,7 @@
 
 
 		<label for="moonDay-select">Wybierz swój dzień księżycowy:</label>
-		<select v-model="selectedMoonDay" @change="assignMoonWord" id="moonDay-select">
+		<select v-model="selectedMoonDay" @change="assignMoonWorld" id="moonDay-select">
 			<!-- <input v-model="userName" @change="someHandler"> -->
 
 			<option disabled value="">Wybierz dzień księżycowy</option>
@@ -29,8 +29,12 @@
   		<!--<input type="submit">-->
 		</form>
 
-		<button v-on:click="assignMoonWord">Show my Moon Year</button>
+		<button v-on:click="assignMoonWorld">Pokaż Świat Księżycowyr</button>
 		<h1>Twój Świat Księżycowy to: {{ moonWorld }}</h1>
+
+
+
+		<button v-on:click="showMonth">Oblicz miesiac</button>
 	</div>
 </body>
 </html>
