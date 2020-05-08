@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     sunWorld: "",
     dateOfBirth: null,
     greeting: "",
-    month: null
+    month: null,
+    day: null
   },
   methods: { // NEW
     updateGreeting: function(name) {
@@ -44,7 +45,16 @@ document.addEventListener('DOMContentLoaded', () => {
       this.month = dateOfBirthInFormat.getMonth();
       console.log(dateOfBirthInFormat);
       console.log(this.month);
-      
+
+    },
+
+    showDay: function() {
+
+      var dateOfBirthInFormat = new Date(this.dateOfBirth);
+      this.day = dateOfBirthInFormat.getDay();
+      console.log(dateOfBirthInFormat);
+      console.log(this.day);
+
     }
 
 
