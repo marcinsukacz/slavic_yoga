@@ -55,6 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log(dateOfBirthInFormat);
       console.log(this.day);
 
+    },
+    
+    //combo function to be called @change in the DOB input form so that it executes two functions
+    //at one time - showDay and showMonth
+    showDayMonth: function() {
+      this.showDay();
+      this.showMonth();
     }
 
 
