@@ -34,16 +34,20 @@ document.addEventListener('DOMContentLoaded', () => {
         this.moonWorld = "D";
       }
     },
+
+    //showMonth function takes month value out of the date of birth selected by the userName
+    //and updates the state of the month by using v-model.lazy on the input element so that it
+    //will be updated after the change. Otherwis eit would be step behind with updating.
     showMonth: function() {
 
-
       var dateOfBirthInFormat = new Date(this.dateOfBirth);
-      // var dtm = dt.getMonth();
-      // var dty = dt.getYear();
-
       this.month = dateOfBirthInFormat.getMonth();
+      console.log(dateOfBirthInFormat);
       console.log(this.month);
-    },
+      
+    }
+
+
     // assignSunWorld: function() {
     //
     //   }
