@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     selectedMoonDay: null,
     moonWorld: "",
     sunWorld: "",
+    mainWorld: "",
     dateOfBirth: null,
     greeting: "",
     month: null,
@@ -36,6 +37,62 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     },
 
+    assignSunWorld: function() {
+
+      let day = this.day;
+
+      if (this.month == 0){
+        console.log("January");
+        console.log(day);
+        if (day == 2 || day == 4 || day == 7 || day == 11 || day == 12 || day == 21 || day == 22 || day == 24 || day == 29 || day == 30 || day == 31){
+          this.sunWorld = "S";
+          console.log("if statement true");
+        }
+        else if (day == 1 || day == 5 || day == 10 || day == 14 || day == 15 || day == 17 || day == 20 || day == 23 || day == 25 || day == 28) {
+          this.sunWorld = "G";
+        }
+        else {
+          this.sunWorld = "D";
+        }
+      }
+    },
+
+    assignMainWorld: function() {
+      // console.log("moon world: " + this.moonWorld);
+      // console.log("sun world: " + this.sunWorld);
+
+      if (this.sunWorld == "G") {
+        if (this.moonWorld == "G") {
+          this.mainWorld = "G";
+        }
+        else if (this.moonWorld == "S") {
+          this.mainWorld = "S";
+        }
+        else {
+          this.mainWorld = "G";
+        }
+      }
+      else if (this.sunWorld == "S") {
+        if (this.moonWorld == "G") {
+          this.mainWorld = "S";
+        }
+        else if (this.moonWorld == "S") {
+          this.mainWorld = "S";
+        }
+        else {
+          this.mainWorld = "D";
+        }
+      }
+      else {
+        if (this.moonWorld == "G") {
+          this.mainWorld = "G";
+        }
+        else {
+          this.mainWorld = "D";
+        }
+      }
+    },
+
     //showMonth function takes month value out of the date of birth selected by the userName
     //and updates the state of the month by using v-model.lazy on the input element so that it
     //will be updated after the change. Otherwis eit would be step behind with updating.
@@ -51,12 +108,12 @@ document.addEventListener('DOMContentLoaded', () => {
     showDay: function() {
 
       var dateOfBirthInFormat = new Date(this.dateOfBirth);
-      this.day = dateOfBirthInFormat.getDay();
+      this.day = dateOfBirthInFormat.getDate();
       console.log(dateOfBirthInFormat);
       console.log(this.day);
 
     },
-    
+
     //combo function to be called @change in the DOB input form so that it executes two functions
     //at one time - showDay and showMonth
     showDayMonth: function() {

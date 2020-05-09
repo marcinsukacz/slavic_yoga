@@ -14,6 +14,14 @@
 		<button v-on:click="updateGreeting('Marcin')">Change Greeting</button> -->
 
 
+		<form>
+  	<label for="birthday-select">Wybierz datę swoich urodzin:</label>
+  		<input type="date" v-model.lazy="dateOfBirth" @change="showDayMonth" id="birthday-select">
+  		<!--<input type="submit">-->
+		</form><br>
+
+		<button v-on:click="assignSunWorld">Oblicz Świat Słoneczny</button>
+		<h1>Twój Świat Słoneczny to: {{ sunWorld }}</h1><br>
 
 		<label for="moonDay-select">Wybierz swój dzień księżycowy:</label>
 		<select v-model="selectedMoonDay" @change="assignMoonWorld" id="moonDay-select">
@@ -23,19 +31,20 @@
 			<option v-for="moonDay in moonDays">{{moonDay}}</option>
 		</select>
 
-		<form>
-  	<label for="birthday-select">Wybierz datę swoich urodzin:</label>
-  		<input type="date" v-model.lazy="dateOfBirth" @change="showDayMonth" id="birthday-select">
-  		<!--<input type="submit">-->
-		</form>
-
-		<button v-on:click="assignMoonWorld">Pokaż Świat Księżycowyr</button>
+		<!-- <button v-on:click="assignMoonWorld">Pokaż Świat Księżycowyr</button> -->
 		<h1>Twój Świat Księżycowy to: {{ moonWorld }}</h1>
 
+		<button v-on:click="assignMainWorld">Oblicz Świat Główny</button>
+		<h1>Twój Świat Główny to: {{ mainWorld }}</h1><br>
+
+		<!-- <button v-on:click="showMonth">Oblicz miesiac</button>
+		<button v-on:click="showDay">Oblicz dzień</button><br> -->
 
 
-		<button v-on:click="showMonth">Oblicz miesiac</button>
-		<button v-on:click="showDay">Oblicz dzień</button>
+
+
+
+
 
 	</div>
 </body>
