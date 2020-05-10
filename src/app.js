@@ -55,6 +55,39 @@ document.addEventListener('DOMContentLoaded', () => {
           this.sunWorld = "D";
         }
       }
+      else if (this.month == 1) {
+        if (day == 1 || day == 13 || day == 16 || day == 17 || day == 20 || day == 26 || day == 27 || day == 28){
+          this.sunWorld = "S";
+        }
+        else if (day == 2 || day == 4 || day == 5 || day == 9 || day == 14 || day == 23 || day == 25) {
+          this.sunWorld = "G";
+        }
+        else{
+          this.sunWorld = "D";
+        }
+      }
+      else if (this.month == 2) {
+        if (day == 5 || day == 6 || day == 9 || day == 10 || day == 11 || day == 20 || day == 21 || day == 22 || day == 23 || day == 27){
+          this.sunWorld = "S";
+        }
+        else if (day == 13 || day == 14 || day == 16 || day == 24 || day == 25 || day == 30 || day == 31) {
+          this.sunWorld = "D";
+        }
+        else{
+          this.sunWorld = "G";
+        }
+      }
+      else if (this.month == 3) {
+        if (day == 2 || day == 5 || day == 10 || day == 17 || day == 18 || day == 19 || day == 23 || day == 29){
+          this.sunWorld = "S";
+        }
+        else if (day == 3 || day == 11 || day == 12 || day == 13 || day == 20 || day == 26 || day == 30) {
+          this.sunWorld = "G";
+        }
+        else{
+          this.sunWorld = "D";
+        }
+      }
     },
 
     assignMainWorld: function() {
@@ -91,6 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
           this.mainWorld = "D";
         }
       }
+
     },
 
     //showMonth function takes month value out of the date of birth selected by the userName
