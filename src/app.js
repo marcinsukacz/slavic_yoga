@@ -279,25 +279,61 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
       else if (this.month == 2) {
-        if (day == 5 || day == 6 || day == 9 || day == 10 || day == 11 || day == 20 || day == 21 || day == 22 || day == 23 || day == 27){
-          this.sunWorld = "S";
+        if (day == 2 || day == 3 || day == 4 || day == 5 || day == 6 || day == 31) {
+          this.mainCircle = 3;
         }
-        else if (day == 13 || day == 14 || day == 16 || day == 24 || day == 25 || day == 30 || day == 31) {
-          this.sunWorld = "D";
+        else if (day == 7 || day == 8 || day == 9) {
+          this.mainCircle = 8;
         }
-        else{
-          this.sunWorld = "G";
+        else if (day == 10 || day == 11 || day == 12 || day == 13) {
+          this.mainCircle = 1;
+        }
+        else if (day == 14 || day == 15 || day == 16) {
+          this.mainCircle = 6;
+        }
+        else if (day == 17 || day == 18 || day == 19) {
+          this.mainCircle = 4;
+        }
+        else if (day == 20 || day == 21) {
+          this.mainCircle = 2;
+        }
+        else if (day == 22 || day == 23 || day == 24) {
+          this.mainCircle = 5;
+        }
+        else if (day == 25 || day == 26 || day == 27) {
+          this.mainCircle = 7;
+        }
+        else {
+          this.mainCircle = 9;
         }
       }
       else if (this.month == 3) {
-        if (day == 2 || day == 5 || day == 10 || day == 17 || day == 18 || day == 19 || day == 23 || day == 29){
-          this.sunWorld = "S";
+        if (day == 1 || day == 2 || day == 3 || day == 4 || day == 30) {
+          this.mainCircle = 3;
         }
-        else if (day == 3 || day == 11 || day == 12 || day == 13 || day == 20 || day == 26 || day == 30) {
-          this.sunWorld = "G";
+        else if (day == 5 || day == 6 || day == 7) {
+          this.mainCircle = 8;
         }
-        else{
-          this.sunWorld = "D";
+        else if (day == 8 || day == 9 || day == 10 || day == 11) {
+          this.mainCircle = 1;
+        }
+        else if (day == 12 || day == 13 || day == 14) {
+          this.mainCircle = 6;
+        }
+        else if (day == 15 || day == 16 || day == 17) {
+          this.mainCircle = 4;
+        }
+        else if (day == 18 || day == 19 || day == 20) {
+          this.mainCircle = 2;
+        }
+        else if (day == 21 || day == 22 || day == 23) {
+          this.mainCircle = 5;
+        }
+        else if (day == 24 || day == 25 || day == 26) {
+          this.mainCircle = 7;
+        }
+        else {
+          this.mainCircle = 9;
         }
       }
       else if (this.month == 4) {
