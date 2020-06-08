@@ -571,6 +571,59 @@ document.addEventListener('DOMContentLoaded', () => {
 
     },
 
+    assignExercises: function() {
+
+      let mainCircle = mainCircle();
+      let exercises = "";
+
+      if(mainCircle == 1){
+        if(this.mainWorld == G) {
+          exercises = "(G1) G5, S9, D3, G6, S7, D2";
+        }
+        else if (this.mainWorld == S) {
+          exercises = "(S1) G8, S7, D3, G3, S6, D8";
+        }
+        else{
+          exercises = "(D1) G2, S4, D5, G6, S8, D6";
+        }
+      }
+      else if (mainCircle == 2) {
+        if(this.mainWorld == G) {
+          exercises = "(G2) G6, S4, D6, G9, S8, D5";
+        }
+        else if (this.mainWorld == S) {
+          exercises = "(S2) G3, S9, D7, G5, S1, D3";
+        }
+        else{
+          exercises = "(D2) G1, S3, D6, G5, S6, D9";
+        }
+      }
+      else if (mainCircle == 3) {
+
+      }
+      else if (mainCircle == 4) {
+
+      }
+      else if (mainCircle == 5) {
+
+      }
+      else if (mainCircle == 6) {
+
+      }
+      else if (mainCircle == 7) {
+
+      }
+      else if (mainCircle == 8) {
+
+      }
+      else if (mainCircle == 9) {
+
+      }
+
+      console.log("====================");
+      console.log(exercises);
+    },
+
     //showMonth function takes month value out of the date of birth selected by the userName
     //and updates the state of the month by using v-model.lazy on the input element so that it
     //will be updated after the change. Otherwis eit would be step behind with updating.
