@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     moonWorld: "",
     sunWorld: "",
     mainWorld: "",
+    setOfExercises: "",
     mainCircle: null,
     dateOfBirth: null,
     greeting: "",
@@ -675,7 +676,7 @@ document.addEventListener('DOMContentLoaded', () => {
           exercises = "(D2) G1, S3, D6, G5, S6, D9";
         }
       }
-
+      this.setOfExercises = exercises;
       console.log("====================");
       console.log(exercises);
     },
