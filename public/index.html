@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Vue</title>
 	<script src="./js/bundle.js"></script>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<div id="app">
@@ -17,6 +18,8 @@
 		<form>
   	<label for="birthday-select">Wybierz datę swoich urodzin:</label>
   		<input type="date" v-model.lazy="dateOfBirth" @change="showDayMonth" id="birthday-select">
+			<!-- <input type="date" v-model.lazy="dateOfBirth" @change="assignSunWorld" id="birthday-select"> -->
+
   		<!--<input type="submit">-->
 		</form><br>
 
