@@ -6,6 +6,14 @@
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+img {
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
 ul {
 	margin: 0;
 	padding: 0;

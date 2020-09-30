@@ -28,8 +28,14 @@
   		<!--<input type="submit">-->
 		</form><br>
 
-		<button v-on:click="assignSunWorld">Oblicz Świat Słoneczny</button>
+		<button v-on:click="assignSunWorld">Oblicz</button>
 		<h1>Twój Świat Słoneczny to: {{ sunWorld }}</h1><br>
+
+		<button v-on:click="assignMainCircle">Oblicz Krag</button>
+		<h1>Twój Krag to: {{ mainCircle }}</h1><br>
+
+		<p>Aby wyliczyć dzień księżycowy według astrologii zachodniej, skorzystaj ze strony www.moonhoroscope.com/lunar-birthday lub www.lyna.info</p>
+
 
 		<label for="moonDay-select">Wybierz swój dzień księżycowy:</label>
 		<select v-model="selectedMoonDay" @change="assignMoonWorld" id="moonDay-select">
@@ -59,5 +65,8 @@
 
 
 	</div>
+	<footer>
+		<img src="../src/assets/przerywnik-proba.png" alt="male logo">
+	</footer>
 </body>
 </html>
