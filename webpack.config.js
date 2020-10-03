@@ -13,4 +13,8 @@ const config = {
   mode: 'development'
 };
 
-module.exports = config;
+// module.exports = config;
+
+module.exports = {
+  publicPath: '/name-of-your-project/'
+}

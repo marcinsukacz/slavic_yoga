@@ -10,31 +10,41 @@
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
 
 </head>
-<header>
-	<img src="../src/assets/logo-www.png" alt="logo">
-</header>
+
 <body>
 	<div id="app">
+
+		<img id="logo" src="../src/assets/logo-www.png" alt="logo">
+
+		<br>
+
+		<img class="break" src="../src/assets/przerywnik-proba.png" alt="male logo">
+
 
 		<!-- <h1>{{ greeting }}</h1>
 		<button v-on:click="updateGreeting('Marcin')">Change Greeting</button> -->
 
 
 		<form>
-  	<label for="birthday-select">Wybierz datę swoich urodzin:</label>
+  	<label for="birthday-select">1. Wybierz datę swoich urodzin:</label>
   		<input type="date" v-model.lazy="dateOfBirth" @change="showDayMonth" id="birthday-select">
 			<!-- <input type="date" v-model.lazy="dateOfBirth" @change="assignSunWorld" id="birthday-select"> -->
 
   		<!--<input type="submit">-->
 		</form><br>
 
-		<button v-on:click="assignSunWorld">Oblicz</button>
-		<h1>Twój Świat Słoneczny to: {{ sunWorld }}</h1><br>
+		<button class="btn" v-on:click="assignSunWorld">Oblicz Świat Słoneczny</button>
+		<h4>Świat Słoneczny: {{ sunWorld }}</h4>
 
-		<button v-on:click="assignMainCircle">Oblicz Krag</button>
-		<h1>Twój Krag to: {{ mainCircle }}</h1><br>
+		<br>
+		<br>
 
-		<p>Aby wyliczyć dzień księżycowy według astrologii zachodniej, skorzystaj ze strony www.moonhoroscope.com/lunar-birthday lub www.lyna.info</p>
+		<button class="btn" v-on:click="assignMainCircle">Oblicz Krąg Główny</button>
+		<h4>Krąg Główny: {{ mainCircle }}</h4>
+
+		<img class="break" src="../src/assets/przerywnik-proba.png" alt="male logo">
+
+		<h2>2. Aby wyliczyć dzień księżycowy według astrologii zachodniej, skorzystaj ze strony www.moonhoroscope.com/lunar-birthday lub www.lyna.info</h2>
 
 
 		<label for="moonDay-select">Wybierz swój dzień księżycowy:</label>
@@ -46,27 +56,29 @@
 		</select>
 
 		<!-- <button v-on:click="assignMoonWorld">Pokaż Świat Księżycowyr</button> -->
-		<h1>Twój Świat Księżycowy to: {{ moonWorld }}</h1>
+		<h4>Świat Księżycowy: {{ moonWorld }}</h4>
 
-		<button v-on:click="assignMainWorld">Oblicz Świat Główny</button>
-		<h1>Twój Świat Główny to: {{ mainWorld }}</h1><br>
+		<img class="break" src="../src/assets/przerywnik-proba.png" alt="male logo">
 
-		<button v-on:click="assignExercises">Pokaż zestaw ćwiczeń</button>
-		<h1>Twój zestaw ćwiczeń to: {{ setOfExercises }}</h1><br>
+
+		<button class="btn" v-on:click="assignMainWorld">Oblicz Świat Główny</button>
+		<h4>Świat Główny: {{ mainWorld }}</h4>
+
+		<br>
+		<br>
+
+		<button class="btn" v-on:click="assignExercises">Pokaż Zestaw Dnia</button>
+		<h1>ZESTAW DNIA {{ setOfExercises }}</h1>
 
 
 		<!-- <button v-on:click="showMonth">Oblicz miesiac</button>
 		<button v-on:click="showDay">Oblicz dzień</button><br> -->
 
-
-
-
-
+	<img class="break" src="../src/assets/przerywnik-proba.png" alt="male logo">
 
 
 	</div>
-	<footer>
-		<img src="../src/assets/przerywnik-proba.png" alt="male logo">
-	</footer>
+
+
 </body>
 </html>

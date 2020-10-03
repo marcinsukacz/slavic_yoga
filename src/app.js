@@ -581,101 +581,101 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if(mainCircle == 1){
         if(this.mainWorld == "G") {
-          exercises = "(G1) G5, S9, D3, G6, S7, D2";
+          exercises = "(G1): G5, S9, D3, G6, S7, D2, G1";
         }
         else if (this.mainWorld == "S") {
-          exercises = "(S1) G8, S7, D3, G3, S6, D8";
+          exercises = "(S1): G8, S7, D3, G3, S6, D8, S1";
         }
         else{
-          exercises = "(D1) G2, S4, D5, G6, S8, D6";
+          exercises = "(D1): G2, S4, D5, G6, S8, D6, D1";
         }
       }
       else if (mainCircle == 2) {
         if(this.mainWorld == "G") {
-          exercises = "(G2) G6, S4, D6, G9, S8, D5";
+          exercises = "(G2): G6, S4, D6, G9, S8, D5, G2";
         }
         else if (this.mainWorld == "S") {
-          exercises = "(S2) G3, S9, D7, G5, S1, D3";
+          exercises = "(S2): G3, S9, D7, G5, S1, D3, S2";
         }
         else{
-          exercises = "(D2) G1, S3, D6, G5, S6, D9";
+          exercises = "(D2): G1, S3, D6, G5, S6, D9, D2";
         }
       }
       else if (mainCircle == 3) {
         if(this.mainWorld == "G") {
-          exercises = "(G3) G9, S6, D5, G8, S3, D6";
+          exercises = "(G3): G9, S6, D5, G8, S3, D6, G3";
         }
         else if (this.mainWorld == "S") {
-          exercises = "(S3) G9, S8, D1, G7, S6, D6";
+          exercises = "(S3): G9, S8, D1, G7, S6, D6, S3";
         }
         else{
-          exercises = "(D3) G4, S7, D9, G8, S6, D4";
+          exercises = "(D3): G4, S7, D9, G8, S6, D4, D3";
         }
       }
       else if (mainCircle == 4) {
         if(this.mainWorld == "G") {
-          exercises = "(G4) G8, S2, D7, G7, S9, D1";
+          exercises = "(G4): G8, S2, D7, G7, S9, D1, G4";
         }
         else if (this.mainWorld == "S") {
-          exercises = "(S4) G3, S2, D6, G2, S7, D5, S4";
+          exercises = "(S4): G3, S2, D6, G2, S7, D5, S4";
         }
         else{
-          exercises = "(D4) G3, S1, D8, G2, S5, D7, D4";
+          exercises = "(D4): G3, S1, D8, G2, S5, D7, D4";
         }
       }
       else if (mainCircle == 5) {
         if(this.mainWorld == "G") {
-          exercises = "(G5) G7, S8, D2, G1, S2, D8, G5";
+          exercises = "(G5): G7, S8, D2, G1, S2, D8, G5";
         }
         else if (this.mainWorld == "S") {
-          exercises = "(S5) G6, S1, D8, G9, S8, D2, S5";
+          exercises = "(S5): G6, S1, D8, G9, S8, D2, S5";
         }
         else{
-          exercises = "(D5) G5, S6, D7, G7, S2, D1, D5";
+          exercises = "(D5): G5, S6, D7, G7, S2, D1, D5";
         }
       }
       else if (mainCircle == 6) {
         if(this.mainWorld == "G") {
-          exercises = "(G6) G1, S9, D3, G2, S8, D9";
+          exercises = "(G6): G1, S9, D3, G2, S8, D9, G6";
         }
         else if (this.mainWorld == "S") {
-          exercises = "(S6) G4, S2, D5, G1, S3, D7, S6";
+          exercises = "(S6): G4, S2, D5, G1, S3, D7, S6";
         }
         else{
-          exercises = "(D6) G7, S8, D1, G3, S7, D2, D6";
+          exercises = "(D6): G7, S8, D1, G3, S7, D2, D6";
         }
       }
       else if (mainCircle == 7) {
         if(this.mainWorld == "G") {
-          exercises = "(G7) G4, S1, D8, G5, S5, D4, G7";
+          exercises = "(G7): G4, S1, D8, G5, S5, D4, G7";
         }
         else if (this.mainWorld == "S") {
-          exercises = "(S7) G2, S6, D4, G4, S5, D9, S7";
+          exercises = "(S7): G2, S6, D4, G4, S5, D9, S7";
         }
         else{
-          exercises = "(D7) G9, S9, D4, G1, S3, D5, D7";
+          exercises = "(D7): G9, S9, D4, G1, S3, D5, D7";
         }
       }
       else if (mainCircle == 8) {
         if(this.mainWorld == "G") {
-          exercises = "(G8) G3, S6, D5, G4, S5, D7, G8";
+          exercises = "(G8): G3, S6, D5, G4, S5, D7, G8";
         }
         else if (this.mainWorld == "S") {
-          exercises = "(S8) G7, S3, D9, G6, S4, D1, S8";
+          exercises = "(S8): G7, S3, D9, G6, S4, D1, S8";
         }
         else{
-          exercises = "(D8) G6, S2, D3, G9, S1, D4, D8";
+          exercises = "(D8): G6, S2, D3, G9, S1, D4, D8";
         }
       }
       else if (mainCircle == 9) {
         if(this.mainWorld == "G") {
-          exercises = "(G9) G2, S4, D6, G3, S6, D3, G9";
+          exercises = "(G9): G2, S4, D6, G3, S6, D3, G9";
         }
         else if (this.mainWorld == "S") {
-          exercises = "(S9) G1, S3, D2, G8, S7, D4, S9";
+          exercises = "(S9): G1, S3, D2, G8, S7, D4, S9";
         }
         else{
-          exercises = "(D9) G8, S5, D2, G4, S4, D3, D9";
+          exercises = "(D9): G8, S5, D2, G4, S4, D3, D9";
         }
       }
       this.setOfExercises = exercises;
