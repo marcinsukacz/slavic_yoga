@@ -1,0 +1,21 @@
+{
+  "name": "slavic_yoga",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "veu": "^1.0.1",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}
