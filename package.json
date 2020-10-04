@@ -8,11 +8,13 @@
   },
   "devDependencies": {
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "execa": "latest"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -w"
+    "build": "webpack -w",
+    "deploy": "node scripts/gh-pages-deploy.js"
   },
   "author": "",
   "license": "ISC",
