@@ -2,6 +2,7 @@ const config = {
   entry: `${__dirname}/src/app.js`,
   output: {
     path: `${__dirname}/public/js/`,
+    publicPath: '/slavic_yoga/',
     filename: 'bundle.js'
   },
   resolve: {   // NEW
@@ -13,8 +14,4 @@ const config = {
   mode: 'development'
 };
 
-// module.exports = config;
-
-module.exports = {
-  publicPath: '/slavic_yoga/'
-}
+module.exports = config;
