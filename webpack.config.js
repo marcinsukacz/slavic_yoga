@@ -2,6 +2,10 @@ const config = {
   entry: `${__dirname}/src/app.js`,
   output: {
     path: `${__dirname}/public/js/`,
+<<<<<<< HEAD
+=======
+    publicPath: '/slavic_yoga/',
+>>>>>>> gh-pages
     filename: 'bundle.js'
   },
   resolve: {   // NEW
@@ -13,8 +17,12 @@ const config = {
   mode: 'development'
 };
 
+<<<<<<< HEAD
 // module.exports = config;
 
 module.exports = {
   publicPath: '/name-of-your-project/'
 }
+=======
+module.exports = config;
+>>>>>>> gh-pages
