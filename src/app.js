@@ -709,11 +709,14 @@ document.addEventListener('DOMContentLoaded', () => {
     showDayMonth: function() {
       this.showDay();
       this.showMonth();
-      //this.assignMainCircle();
+      this.assignSunWorld();
+      this.assignMainCircle();
     },
 
     //combo function to call two functions at once
-    sunWorldMainCircle: function(){
+    giveExercisesAndMainWorld: function(){
+      this.assignMainWorld();
+      this.assignExercises();
 
 
     }
