@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     dateOfBirth: null,
     greeting: "",
     month: null,
-    day: null
+    day: null,
+    printPath: ""
   },
   methods: { // NEW
     updateGreeting: function(name) {
@@ -579,12 +580,15 @@ document.addEventListener('DOMContentLoaded', () => {
       //this.assignSunWorld();
       let exercises = "";
 
+
       if(mainCircle == 1){
         if(this.mainWorld == "G") {
           exercises = "(G1): G5, S9, D3, G6, S7, D2, G1";
+          this.printPath = "../src/assets/g1 do drukarek.pdf";
         }
         else if (this.mainWorld == "S") {
           exercises = "(S1): G8, S7, D3, G3, S6, D8, S1";
+          this.printPath = "../src/assets/g1 do drukarek.pdf";
         }
         else{
           exercises = "(D1): G2, S4, D5, G6, S8, D6, D1";
@@ -593,6 +597,7 @@ document.addEventListener('DOMContentLoaded', () => {
       else if (mainCircle == 2) {
         if(this.mainWorld == "G") {
           exercises = "(G2): G6, S4, D6, G9, S8, D5, G2";
+          this.printPath = "../src/assets/g2 do drukarek.pdf";
         }
         else if (this.mainWorld == "S") {
           exercises = "(S2): G3, S9, D7, G5, S1, D3, S2";
@@ -604,6 +609,7 @@ document.addEventListener('DOMContentLoaded', () => {
       else if (mainCircle == 3) {
         if(this.mainWorld == "G") {
           exercises = "(G3): G9, S6, D5, G8, S3, D6, G3";
+          this.printPath = "../src/assets/g3 do drukarek.pdf";
         }
         else if (this.mainWorld == "S") {
           exercises = "(S3): G9, S8, D1, G7, S6, D6, S3";
@@ -615,6 +621,7 @@ document.addEventListener('DOMContentLoaded', () => {
       else if (mainCircle == 4) {
         if(this.mainWorld == "G") {
           exercises = "(G4): G8, S2, D7, G7, S9, D1, G4";
+          this.printPath = "../src/assets/g4 do drukarek.pdf";
         }
         else if (this.mainWorld == "S") {
           exercises = "(S4): G3, S2, D6, G2, S7, D5, S4";
@@ -626,6 +633,7 @@ document.addEventListener('DOMContentLoaded', () => {
       else if (mainCircle == 5) {
         if(this.mainWorld == "G") {
           exercises = "(G5): G7, S8, D2, G1, S2, D8, G5";
+          this.printPath = "../src/assets/g5 do drukarek.pdf";
         }
         else if (this.mainWorld == "S") {
           exercises = "(S5): G6, S1, D8, G9, S8, D2, S5";
@@ -637,6 +645,7 @@ document.addEventListener('DOMContentLoaded', () => {
       else if (mainCircle == 6) {
         if(this.mainWorld == "G") {
           exercises = "(G6): G1, S9, D3, G2, S8, D9, G6";
+          this.printPath = "../src/assets/g6 do drukarek.pdf";
         }
         else if (this.mainWorld == "S") {
           exercises = "(S6): G4, S2, D5, G1, S3, D7, S6";
@@ -648,6 +657,7 @@ document.addEventListener('DOMContentLoaded', () => {
       else if (mainCircle == 7) {
         if(this.mainWorld == "G") {
           exercises = "(G7): G4, S1, D8, G5, S5, D4, G7";
+          this.printPath = "../src/assets/g7 do drukarek.pdf";
         }
         else if (this.mainWorld == "S") {
           exercises = "(S7): G2, S6, D4, G4, S5, D9, S7";
@@ -659,6 +669,7 @@ document.addEventListener('DOMContentLoaded', () => {
       else if (mainCircle == 8) {
         if(this.mainWorld == "G") {
           exercises = "(G8): G3, S6, D5, G4, S5, D7, G8";
+          this.printPath = "../src/assets/g8 do drukarek.pdf";
         }
         else if (this.mainWorld == "S") {
           exercises = "(S8): G7, S3, D9, G6, S4, D1, S8";
@@ -670,6 +681,7 @@ document.addEventListener('DOMContentLoaded', () => {
       else if (mainCircle == 9) {
         if(this.mainWorld == "G") {
           exercises = "(G9): G2, S4, D6, G3, S6, D3, G9";
+          this.printPath = "../src/assets/g9 do drukarek.pdf";
         }
         else if (this.mainWorld == "S") {
           exercises = "(S9): G1, S3, D2, G8, S7, D4, S9";
@@ -681,6 +693,14 @@ document.addEventListener('DOMContentLoaded', () => {
       this.setOfExercises = exercises;
       console.log("====================");
       console.log(exercises);
+    },
+
+    //function to open a seperate window with a pdf document to print exercises
+    printExercises: function() {
+
+      //window.open('../src/assets/g1 do drukarek.pdf', '_blank', 'fullscreen=yes');
+      window.open('this.printPath', '_blank', 'fullscreen=yes');
+
     },
 
     //showMonth function takes month value out of the date of birth selected by the userName

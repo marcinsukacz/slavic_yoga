@@ -21,6 +21,8 @@
 		<img class="break" src="../src/assets/przerywnik-proba.png" alt="male logo">
 
 
+
+
 		<!-- <h1>{{ greeting }}</h1>
 		<button v-on:click="updateGreeting('Marcin')">Change Greeting</button> -->
 
@@ -69,6 +71,14 @@
 
 		<button class="btn" v-on:click="giveExercisesAndMainWorld">Pokaż Zestaw Dnia</button>
 		<h1>ZESTAW DNIA {{ setOfExercises }}</h1>
+		<h1>ścieżka: {{ printPath }}</h1>
+
+
+		<!-- <a href="../src/assets/g1 do drukarek.pdf">drukuj Ćwiczenia</a> -->
+		<button class="btn" v-on:click="printExercises">Drukuj Ćwiczenia</button>
+		<a href="#" onclick="window.open('../src/assets/g1 do drukarek.pdf', '_blank', 'fullscreen=yes'); return false;">Drukuj Ćwiczenia</a>
+
+		<a href="#" onclick="window.open('{{ printPath }}', '_blank', 'fullscreen=yes'); return false;">Drukuj Ćwiczenia</a>
 
 
 		<!-- <button v-on:click="showMonth">Oblicz miesiac</button>
