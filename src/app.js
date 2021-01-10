@@ -588,10 +588,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         else if (this.mainWorld == "S") {
           exercises = "(S1): G8, S7, D3, G3, S6, D8, S1";
-          this.printPath = "../src/assets/g1 do drukarek.pdf";
+          this.printPath = "../src/assets/s1.pdf";
         }
         else{
           exercises = "(D1): G2, S4, D5, G6, S8, D6, D1";
+          this.printPath = "../src/assets/d1 do drukarek.pdf";
+
         }
       }
       else if (mainCircle == 2) {
@@ -601,9 +603,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         else if (this.mainWorld == "S") {
           exercises = "(S2): G3, S9, D7, G5, S1, D3, S2";
+          this.printPath = "../src/assets/s2 do drukarek.pdf";
+
         }
         else{
           exercises = "(D2): G1, S3, D6, G5, S6, D9, D2";
+          this.printPath = "../src/assets/d2 do drukarek.pdf";
+
         }
       }
       else if (mainCircle == 3) {
@@ -613,9 +619,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         else if (this.mainWorld == "S") {
           exercises = "(S3): G9, S8, D1, G7, S6, D6, S3";
+          this.printPath = "../src/assets/s3 do drukarek.pdf";
+
         }
         else{
           exercises = "(D3): G4, S7, D9, G8, S6, D4, D3";
+          this.printPath = "../src/assets/d3 do drukarek.pdf";
+
         }
       }
       else if (mainCircle == 4) {
@@ -625,9 +635,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         else if (this.mainWorld == "S") {
           exercises = "(S4): G3, S2, D6, G2, S7, D5, S4";
+          this.printPath = "../src/assets/s4 do drukarek.pdf";
+
         }
         else{
           exercises = "(D4): G3, S1, D8, G2, S5, D7, D4";
+          this.printPath = "../src/assets/d4 do drukarek.pdf";
+
         }
       }
       else if (mainCircle == 5) {
@@ -637,9 +651,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         else if (this.mainWorld == "S") {
           exercises = "(S5): G6, S1, D8, G9, S8, D2, S5";
+          this.printPath = "../src/assets/s5 do drukarek.pdf";
+
         }
         else{
           exercises = "(D5): G5, S6, D7, G7, S2, D1, D5";
+          this.printPath = "../src/assets/d5 do drukarek.pdf";
+
         }
       }
       else if (mainCircle == 6) {
@@ -649,9 +667,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         else if (this.mainWorld == "S") {
           exercises = "(S6): G4, S2, D5, G1, S3, D7, S6";
+          this.printPath = "../src/assets/s6 do drukarek.pdf";
+
         }
         else{
           exercises = "(D6): G7, S8, D1, G3, S7, D2, D6";
+          this.printPath = "../src/assets/d6 do drukarek.pdf";
+
         }
       }
       else if (mainCircle == 7) {
@@ -661,9 +683,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         else if (this.mainWorld == "S") {
           exercises = "(S7): G2, S6, D4, G4, S5, D9, S7";
+          this.printPath = "../src/assets/s7 do drukarek.pdf";
+
         }
         else{
           exercises = "(D7): G9, S9, D4, G1, S3, D5, D7";
+          this.printPath = "../src/assets/d7 do drukarek.pdf";
+
         }
       }
       else if (mainCircle == 8) {
@@ -673,9 +699,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         else if (this.mainWorld == "S") {
           exercises = "(S8): G7, S3, D9, G6, S4, D1, S8";
+          this.printPath = "../src/assets/s8 do drukarek.pdf";
+
         }
         else{
           exercises = "(D8): G6, S2, D3, G9, S1, D4, D8";
+          this.printPath = "../src/assets/d8 do drukarek.pdf";
+
         }
       }
       else if (mainCircle == 9) {
@@ -685,9 +715,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         else if (this.mainWorld == "S") {
           exercises = "(S9): G1, S3, D2, G8, S7, D4, S9";
+          this.printPath = "../src/assets/s9 do drukarek.pdf";
+
         }
         else{
           exercises = "(D9): G8, S5, D2, G4, S4, D3, D9";
+          this.printPath = "../src/assets/d9 do drukarek.pdf";
+
         }
       }
       this.setOfExercises = exercises;
