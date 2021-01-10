@@ -698,8 +698,8 @@ document.addEventListener('DOMContentLoaded', () => {
     //function to open a seperate window with a pdf document to print exercises
     printExercises: function() {
 
-      //window.open('../src/assets/g1 do drukarek.pdf', '_blank', 'fullscreen=yes');
-      window.open('this.printPath', '_blank', 'fullscreen=yes');
+      //window.open('../src/assets/g4 do drukarek.pdf', '_blank', 'fullscreen=yes');
+      window.open( this.printPath, '_blank', 'fullscreen=yes');
 
     },
 
